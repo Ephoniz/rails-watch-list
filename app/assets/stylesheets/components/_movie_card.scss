@@ -1,0 +1,43 @@
+.movie-card{
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 20px 20px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 6px;
+}
+
+.movie-card .lockup{
+  padding: 15px;
+  height: 80%;
+}
+
+.movie-card .lockup h4{
+  font-weight: bold;
+}
+
+.movie-card .lockup .comment{
+  font-style: italic;
+}
+
+.movie-card img{
+  border-radius: 6px;
+}
+
+.movie-card small a{
+  color: red;
+}
+
+.movie-card .movie-functions {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.movies-container{
+  width:80%;
+  position: relative;
+  left: 15%;
+}

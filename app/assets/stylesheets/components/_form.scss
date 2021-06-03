@@ -1,0 +1,18 @@
+.form-box{
+  margin-top: 200px;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 49%, rgba(255,255,255,1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-box .btn{
+  border: 1px solid #161830;
+  color: #161830;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.form-box .btn:hover{
+  background-color: #161830;
+  color: white;
+}

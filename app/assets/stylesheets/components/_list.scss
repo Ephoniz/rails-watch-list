@@ -1,0 +1,24 @@
+.list-card{
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(11, 11, 63, 0.1) 49%, rgba(0,0,0,0.2) 100%), url('https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-09-07-00-06/marvels-avengers-analisis-1599433559440.jpg/EG11/resize/1200x-1/marvels-avengers-analisis-1599433559440.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 30%;
+  height: 200px;
+  margin: 30px;
+  box-shadow: 1px 2px 10px rgba(0,0,0,0.7);
+}
+
+.list-card a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 50px;
+}
+
+.list-card a:hover{
+  text-shadow: 1px 2px 10px rgba(255, 255, 255, 0.7);
+}
