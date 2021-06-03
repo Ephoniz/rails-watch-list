@@ -2,6 +2,7 @@
   <h1 class="lists-title"><%= @list.name %></h1>
   <%= link_to "Add new movie", new_list_bookmark_path(@list), class: "new-list-btn"%>
   <%= link_to  "Go back to lists", lists_path, class: "new-list-btn" %>
+  <%= link_to 'Delete this list', list_path(@list), method: :delete, data: { confirm: 'Are you sure you want to delete the list?' }, class: "new-list-btn" %>
 </div>
 
 <div class="movies-container">

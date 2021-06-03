@@ -6,7 +6,8 @@
 <div class="container">
   <div class="row gx-5">
     <% @lists.each do |list|%>
-    <div class="list-card col-12">
+    <div class="list-card col-12" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(11, 11, 63, 0.5) 49%, rgba(0,0,0,0.2) 100%), url(<%= list.image_url %>);   background-position: top;
+  background-size: cover;">
       <%= link_to list.name, list_path(list) %>
     </div>
     <% end %>
