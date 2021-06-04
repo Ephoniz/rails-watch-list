@@ -15,7 +15,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
 
-    if @list.save
+    if @list.save!
       redirect_to @list, notice: 'Restaurant was successfully created.'
     else
       render :new
@@ -35,6 +35,6 @@ class ListsController < ApplicationController
   end
 
   def list_params
-    params.require(:list).permit(:name, :image_url)
+    params.require(:list).permit(:name)
   end
 end
