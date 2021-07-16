@@ -4,12 +4,16 @@
 </div>
 
 <div class="container">
-  <div class="row gx-5">
-    <% @lists.each do |list|%>
-    <div class="list-card col-12" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(11, 11, 63, 0.5) 49%, rgba(0,0,0,0.2) 100%), url(<%= list_image(list) %>)">
-      <%= link_to list.name, list_path(list) %>
+  <div class="lists-container">
+    <div class="list-second-container">
+      <% @lists.each do |list|%>
+         <%= link_to list_path(list) do %>
+          <div class="list-card" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(11, 11, 63, 0.5) 49%, rgba(0,0,0,0.2) 100%), url(<%= list_image(list) %>)">
+            <p><%= list.name %></p>
+          </div>
+        <% end %>
+      <% end %>
     </div>
-    <% end %>
   </div>
 </div>
 

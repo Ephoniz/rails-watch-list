@@ -5,10 +5,10 @@
   <%= link_to 'Delete this list', list_path(@list), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete this list?' }%>
 
 </div>
-<div class="movies-container">
-    <div class="row">
+<div class="container">
+    <div class="scroll-container">
       <% @list.bookmarks.each do |bookmark| %>
-      <div class="col-5 movie-card">
+      <div class=" scroll-block movie-card ml-5">
         <%= image_tag bookmark.movie.poster_url, alt: "#{bookmark.movie.title} poster", width: 200 %>
         <div class="lockup">
         <h4><%= bookmark.movie.title%></h4>

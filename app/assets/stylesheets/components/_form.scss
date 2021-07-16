@@ -1,8 +1,21 @@
 .form-box{
   margin-top: 200px;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 49%, rgba(255,255,255,1) 100%);
+  background:rgba(161, 200, 255, 0.2);
+  backdrop-filter: blur(6px);
   padding: 20px;
   border-radius: 10px;
+  color: #111224;
+
+  input {
+    border-radius: 8px;
+    background-color: rgba(161, 200, 255, 0.52);
+    border-color: rgba(161, 200, 255, 0.52);
+  }
+
+  input:focus {
+    background-color: rgba(161, 200, 255, 0.568);
+    color:#111224;
+  }
 }
 
 .form-box .btn{
